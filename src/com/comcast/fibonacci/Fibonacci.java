@@ -21,6 +21,7 @@ public class Fibonacci {
 		}
 		
 		System.out.println();
+		//Below is using WHILE loop
 		
 		int t1 = 1;
 		int t2 = 2;
