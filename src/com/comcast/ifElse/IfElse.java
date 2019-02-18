@@ -32,16 +32,16 @@ public class IfElse {
 		for (int i=0; i<set1.length ;  ++i) {
 			int aa = set1[i];
 					if (aa == a && a % 2 == 0) {
-						System.out.println("If  is even and in the inclusive range of 2 to 5, print Not Weird");
+						System.out.println("Not Weird");
 					}
 		}
 		}
 		else if(a % 2 == 0 && (a>=6 && a<=20)) {
-			 System.out.println("Not Weird");
+			 System.out.println("Weird");
 			
 			}
 		else if(a % 2 == 0 && (a>=21)) {
-			 System.out.println("the Last block --- Not Weird");
+			 System.out.println("Not Weird");
 			
 			}
 			}
