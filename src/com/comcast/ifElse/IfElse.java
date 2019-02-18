@@ -27,6 +27,7 @@ public class IfElse {
 			System.out.println("Weired");
 		}
 		
+		//this could be much more simplified without For loop (a % 2 == 0 && a<=5) is sufficient 
 		else if(a % 2 == 0 && a<=5) {
 		for (int i=0; i<set1.length ;  ++i) {
 			int aa = set1[i];
