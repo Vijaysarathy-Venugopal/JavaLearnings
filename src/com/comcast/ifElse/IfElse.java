@@ -9,10 +9,10 @@ public class IfElse {
 		
 		/*Given an integer, , perform the following conditional actions:
 
-			1. If  is odd, print Weird
-			2. If  is even and in the inclusive range of 2 to 5, print Not Weird
-			3. If  is even and in the inclusive range of 6 to 20, print Weird
-			4. If  is even and greater than , print Not Weird
+			Block 1. If  is odd, print Weird
+			Block 2. If  is even and in the inclusive range of 2 to 5, print Not Weird
+			Block 3. If  is even and in the inclusive range of 6 to 20, print Weird
+			Block 4. If  is even and greater than , print Not Weird
 			Complete the stub code provided in your editor to print whether or not  is weird.*/
 		Scanner scanner = new Scanner(System.in);
 		int a = scanner.nextInt();
@@ -27,7 +27,7 @@ public class IfElse {
 			System.out.println("Weired");
 		}
 		
-		else if(a % 2 == 0) {
+		else if(a % 2 == 0 && a<=5) {
 		for (int i=0; i<set1.length ;  ++i) {
 			int aa = set1[i];
 					if (aa == a && a % 2 == 0) {
@@ -35,15 +35,16 @@ public class IfElse {
 					}
 		}
 		}
-		else if(a % 2 == 0) {
-			for (int j=0; j<set2.length ;  ++j) {
-				int bb = set2[j];
-						if (bb == a && a % 2 == 0) {
-							System.out.println("If  is even and in the inclusive range of 6 to 20, print Not Weird");
-						}
+		else if(a % 2 == 0 && (a>=6 && a<=20)) {
+			 System.out.println("Not Weird");
+			
+			}
+		else if(a % 2 == 0 && (a>=21)) {
+			 System.out.println("the Last block --- Not Weird");
+			
 			}
 			}
 		
 	}
 
-}
+
